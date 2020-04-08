@@ -1,0 +1,14 @@
+---
+# start_and_or_enable_systemd_service/tasks/main.yml
+
+- name: "Start the {{ service_name }} service"
+  service:
+    name: "{{ service_name }}"
+    state: 'started'
+  when: 'service_started is defined and service_started == "True"'
+
+- name: "Enable the {{ service_name }} service"
+  service:
+    name: "{{ service_name }}"
+    enabled: 'true'
+  when: 'service_enabled is defined and service_enabled == "True"'
