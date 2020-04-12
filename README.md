@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-start_and_or_enable_systemd_service/workflows/Ansible%20Lint/badge.svg)
+
 start_and_or_enable_systemd_service
 =========
 
