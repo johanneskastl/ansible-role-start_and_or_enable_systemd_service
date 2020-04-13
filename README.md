@@ -27,7 +27,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: johanneskastl.start_and_or_enable_systemd_service, service_name: 'sshd', service_started: 'True', service_enabled: 'True' }
+         - { role: 'johanneskastl.start_and_or_enable_systemd_service', service_name: 'sshd', service_started: 'True', service_enabled: 'True' }
 
 License
 -------
