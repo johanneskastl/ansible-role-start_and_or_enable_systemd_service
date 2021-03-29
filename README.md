@@ -14,8 +14,8 @@ Role Variables
 --------------
 
 - `service_name`: Name of the service to be modified (Required).
-- `service_started`: Set to `True` if the service should be started.
-- `service_enabled`: Set to `True` if the service should be enabled.
+- `service_started`: Set to `true` if the service should be started (Required).
+- `service_enabled`: Set to `true` if the service should be enabled (Required).
 
 Dependencies
 ------------
