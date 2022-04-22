@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'start_and_or_enable_systemd_service'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Start and/or enable a systemd service'
   company: 'B1 Systems GmbH'
