@@ -32,3 +32,11 @@
   when:
     - 'service_enabled is defined'
     - 'not service_enabled | bool'
+
+- name: "Restart the {{ service_name }} service"
+  service:
+    name: "{{ service_name }}"
+    state: 'restarted'
+  when:
+    - 'service_restarted is defined'
+    - 'service_restarted | bool'
