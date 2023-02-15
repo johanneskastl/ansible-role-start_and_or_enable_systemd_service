@@ -1,7 +1,7 @@
 ---
 # start_and_or_enable_systemd_service/tasks/main.yml
 
-- name: "Start the {{ service_name }} service"
+- name: "Start the service {{ service_name }}"
   ansible.builtin.service:
     name: "{{ service_name }}"
     state: 'started'
@@ -9,7 +9,7 @@
     - 'service_started is defined'
     - 'service_started | bool'
 
-- name: "Enable the {{ service_name }} service"
+- name: "Enable the service {{ service_name }}"
   ansible.builtin.service:
     name: "{{ service_name }}"
     enabled: 'true'
@@ -17,7 +17,7 @@
     - 'service_enabled is defined'
     - 'service_enabled | bool'
 
-- name: "Stop the {{ service_name }} service"
+- name: "Stop the service {{ service_name }}"
   ansible.builtin.service:
     name: "{{ service_name }}"
     state: 'stopped'
@@ -25,7 +25,7 @@
     - 'service_started is defined'
     - 'not service_started | bool'
 
-- name: "Disable the {{ service_name }} service"
+- name: "Disable the service {{ service_name }}"
   ansible.builtin.service:
     name: "{{ service_name }}"
     enabled: 'false'
@@ -33,7 +33,7 @@
     - 'service_enabled is defined'
     - 'not service_enabled | bool'
 
-- name: "Restart the {{ service_name }} service"
+- name: "Restart the service {{ service_name }}"
   ansible.builtin.service:
     name: "{{ service_name }}"
     state: 'restarted'
