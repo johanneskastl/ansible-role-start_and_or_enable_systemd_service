@@ -12,30 +12,22 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - 7
-        - 8
+        - all
     - name: Debian
       versions:
-        - 8
-        - 9
-        - 10
+        - all
     - name: Fedora
       versions:
         - all
     - name: opensuse
       versions:
-        - 15.1
+        - all
     - name: SLES
       versions:
-        - 12
-        - 15
+        - all
     - name: Ubuntu
       versions:
-        - 14.04
-        - 16.04
-        - 18.04
-        - 19.10
-        - 20.04
+        - all
 
   galaxy_tags: []
 
